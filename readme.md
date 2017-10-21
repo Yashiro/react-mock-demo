@@ -1,5 +1,8 @@
 # 前端mock数据实现伪后台
-两种实现方式mockjs和roadhog，注roadhog也可以利用mockjs造数据，知识这时的mockjs不承担拦截ajax请求的任务  
+两种实现方式  
+1. mockjs  
+2. roadhog  
+注： roadhog也可以利用mockjs造数据，只是这时的mockjs不承担拦截ajax请求的任务  
 
 ## mockjs实现
 这种方式只支持ajax和axios，不支持fetch  
@@ -15,8 +18,10 @@ const dataA = $.ajax({
 })
 console.log("dataA" ,dataA)
 ```
+mock收到的Options与ajax得到的返回值:  
+![ajax请求options和返回值](https://github.com/vonxq/react-mock-demo/blob/master/img/ajaxOptionsAndResponse.png?raw=true)
 得到的返回值如下:  
-
+![ajax请求返回值](https://github.com/vonxq/react-mock-demo/blob/master/img/ajaxResponse.png?raw=true)
 #### fetch  
 fetch用法 [fetch API详解 mozila](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)  
 fetch存在各浏览器兼容性问题，使用时需要添加相应polyfill  
@@ -42,6 +47,7 @@ axios.post('/axios', {
 });
 ```  
 mock得到的options和axios收到的response如图所示:  
+![mock得到的options和axios收到的response](https://github.com/vonxq/react-mock-demo/blob/master/img/axiosAndMockjs.png?raw=true)
 
 
 ## roadhog前端mock功能实践demo

@@ -20,7 +20,10 @@ const dataA = $.ajax({
 })
 console.log("dataA" ,dataA)
 ```
+mock收到的Options与ajax得到的返回值:  
+![ajax请求options和返回值](https://github.com/vonxq/react-mock-demo/blob/master/img/ajaxOptionsAndResponse.png?raw=true)
 得到的返回值如下:  
+![ajax请求返回值](https://github.com/vonxq/react-mock-demo/blob/master/img/ajaxResponse.png?raw=true)
 
 ### fetch
 fetch用法 [fetch API详解 mozila](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)  
@@ -47,3 +50,4 @@ axios.post('/axios', {
 });
 ```  
 mock得到的options和axios收到的response如图所示:  
+![mock得到的options和axios收到的response](https://github.com/vonxq/react-mock-demo/blob/master/img/axiosAndMockjs.png?raw=true)
