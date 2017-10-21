@@ -1,8 +1,11 @@
 # 前端mock数据实现伪后台
-两种实现方式  
+两种实现方式，具体工程demo打开具体文件夹查看。
 1. mockjs  
 2. roadhog  
-注： roadhog也可以利用mockjs造数据，只是这时的mockjs不承担拦截ajax请求的任务  
+注： 
+1. roadhog也可以利用mockjs造数据，只是这时的mockjs不承担拦截ajax请求的任务  
+2. demo做得比较粗糙，输出信息都在控制台，建议自己按照文档思路理解即可
+
 
 ## mockjs实现
 这种方式只支持ajax和axios，不支持fetch  
@@ -50,7 +53,7 @@ mock得到的options和axios收到的response如图所示:
 ![mock得到的options和axios收到的response](https://github.com/vonxq/react-mock-demo/blob/master/img/axiosAndMockjs.png?raw=true)
 
 
-## roadhog前端mock功能实践demo
+## roadhog实现mock
 偷了个懒，直接用dva-cli创建的工程  
 主要是想确认下roadhog的mock功能和mockjs有没有关系  
 事实证明mockjs并不是必须的，项目里的mockjs只起到了造数据的作用，拦截ajax请求是roadhog自身提供的(内部或许有使用到类似技术)  
